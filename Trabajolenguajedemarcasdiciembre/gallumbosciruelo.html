@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallumbos Ciruelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="Fondo.jpg" alt="Logo Gallumbos Ciruelo" class="logo">
+        </div>
+        <h1>Gallumbos Ciruelo</h1>
+        <p class="slogan">"Comodidad que se lleva por dentro"</p> 
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#coleccion">Colección</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <section id="sobre-nosotros">
+            <h2>Sobre Gallumbos Ciruelo</h2>
+            <p>
+                Somos una marca dedicada al hombre moderno que valora el confort sin sacrificar el estilo. 
+                Nuestra ropa interior está diseñada para <strong>hombres reales ibericos</strong>, ofreciendo un ajuste perfecto a cualquier tamaño.
+                Tejidos transpirables y diseños que molan.
+            </p>
+        </section>
+
+        <section class="seccion destacada">
+            <div class="caja destacada">
+                <h2>Calidad Premium nacional</h2>
+                <p>Algodón 100% natural y fabricado en España.</p>
+            </div>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestra Colección</h2>
+            
+            <div class="galeria-productos">
+                
+                <article class="producto">
+                    <div class="imagenelegance">
+                        <span class="etiqueta-nuevo">Nuevo</span>
+                        <img src="elegance.jpg" alt="Modelo Clásico">
+                    </div>
+                    <h3>Modelo Clásico</h3>
+                    <p>El básico que nunca falla. Suave y resistente.</p>
+                    <p class="precio">15.99€</p>
+                </article>
+
+                <article class="producto">
+                    <div class="imagencalzonessport">
+                        <img src="sport.jpg" alt="Modelo Sport">
+                    </div>
+                    <h3>Modelo Sport</h3>
+                    <p>Diseño ergonómico para correr sin roces.</p>
+                    <p class="precio">18.50€</p>
+                </article>
+
+                <article class="producto">
+                    <div class="imagenclasica">
+                        <img src="clasico.jpg" alt="Modelo Elegance">
+                    </div>
+                    <h3>Modelo Elegance</h3>
+                    <p>Seda sintética para cuando tienes una cita especial.</p>
+                    <p class="precio">22.00€</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacta con nosotros</h2>
+            <form action="#" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="tipo">¿Qué necesitas?</label>
+                    <select id="tipo" name="tipo">
+                        <option value="pedido">¿Dónde está mi pedido?</option>
+                        <option value="info">Info del producto</option>
+                        <option value="otro">Otras cosas</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Cuéntanos:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Enviar consulta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gallumbos Ciruelo. Todos los derechos reservados .</p>
+    </footer>
+
+</body>
+</html>

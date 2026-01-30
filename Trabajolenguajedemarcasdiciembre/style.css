@@ -1,0 +1,188 @@
+/* variables para los colores y medidas [cite: 115] */
+:root {
+    --color-primario: #2c3e50;
+    --color-secundario: #e74c3c;
+    --color-fondo: #ecf0f1;
+    --color-texto: #333;
+    --espaciado-standar: 20px;
+    --borde-radio: 8px;
+}
+
+/* reseteo basico pa quitar margenes */
+* {
+    box-sizing: border-box; /* esto es pal modelo de caja  */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+}
+
+/* header */
+header {
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: var(--espaciado-standar);
+}
+
+header .logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* menu navegacion */
+nav {
+    background-color: #34495e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* pa ponerlo horizontal */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--color-secundario);
+}
+
+/* secciones */
+section {
+    padding: 40px var(--espaciado-standar);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: var(--espaciado-standar);
+    color: var(--color-primario);
+}
+
+/* caja destacada con los bordes y el fondo */
+.seccion-destacada {
+    background-color: var(--color-fondo);
+    text-align: center;
+}
+
+.caja-destacada {
+    background-color: white;
+    border: 2px dashed var(--color-secundario); /* borde a rayas */
+    padding: 30px; 
+    margin: 20px auto; 
+    max-width: 600px;
+    border-radius: var(--borde-radio);
+}
+
+/* productos, display flex aqui  */
+.galeria-productos {
+    display: flex;
+    flex-direction: column; /* en movil una columna */
+    gap: 20px;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: var(--borde-radio);
+    background: white;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.precio {
+    font-weight: bold;
+    color: var(--color-secundario);
+    font-size: 1.2em;
+}
+
+/* position absolute para la etiqueta  */
+.imagen-contenedor {
+    position: relative;
+    display: inline-block;
+}
+
+.etiqueta-nuevo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    border-radius: 4px;
+}
+
+/* formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: var(--color-fondo);
+    padding: 30px;
+    border-radius: var(--borde-radio);
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: var(--color-secundario);
+}
+
+footer {
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* media querys pal responsive */
+@media (min-width: 768px) {
+    /* esto es pa pantalla grande */
+    
+    .galeria-productos {
+        flex-direction: row; /* aver si se pone en fila  */
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .producto {
+        flex: 1;
+        min-width: 250px;
+        max-width: 30%;
+    }
+}
